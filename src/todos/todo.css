@@ -1,0 +1,76 @@
+.todo-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5px 15vw;
+  height: 100%;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 15px 15px 15px;
+  margin: 5px;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.todo-container:hover {
+  cursor: pointer;
+  background-color: rgb(246, 248, 255);
+}
+
+.todo-title {
+  font-weight: 900;
+}
+
+.todo-createdAt {
+  font-size: 14px;
+  font-family: monospace;
+}
+
+.todo-priority {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.todo-content {
+  padding-top: 15px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.todo-state-icon {
+  align-self: flex-end;
+  border-radius: 100%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+  transition: transform .5s ease;
+}
+
+.todo-state-icon:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.todo-filter-state-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-filter-state-container button {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-top: 3px solid rgb(221, 209, 209);
+  width: 100px;
+  padding: 10px;
+  margin: 5px;
+  background-color: inherit;
+}
+
+.todo-filter-state-container button:hover {
+  cursor: pointer;
+}

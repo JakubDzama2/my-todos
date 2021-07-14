@@ -1,0 +1,1 @@
+export const pipe = (...fns: ((f: any) => any)[]) => fns.reduceRight((f, g) => (...args) => f(g(...args)));
